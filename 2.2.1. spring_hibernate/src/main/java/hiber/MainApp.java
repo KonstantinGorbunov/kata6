@@ -29,6 +29,8 @@ public class MainApp {
 
       }
       userService.listUsers().stream().forEach(System.out :: println);
+
+      System.out.println(userService.getUserByCarModelAndSeries("bb3", 3));
       context.close();
    }
 }
