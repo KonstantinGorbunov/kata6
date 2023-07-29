@@ -6,11 +6,9 @@ import javax.persistence.*;
 @Table(name = "car")
 public class Car {
     @Id
+    @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @OneToOne(mappedBy = "car")
-    private User user;
 
     @Column
     private String model;
